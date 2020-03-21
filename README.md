@@ -1,6 +1,6 @@
 # covid-update-number-dead
-- Função lambda que manda e-mail com total de mortos no Brasil para o meu e-mail a cada 30 minutos;
-- Assim recebo notificação push do e-mail com o numero de mortos por codiv-19 no Brasil
+- Função lambda que manda e-mail com total de mortos no Brasil para o meu e-mail a cada 30 minutos
+- Assim passo a receber notificações push do e-mail com o numero de mortos por codiv-19 no Brasil
 
 ## Resultado
 ![](assets/mail.png)
