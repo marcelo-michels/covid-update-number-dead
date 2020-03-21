@@ -7,7 +7,7 @@ module.exports.main = async event => {
   try {
     const deads = await fetchNumberDeads();
     let msgEmail = `Brazil deads count ${deads}`;
-    await sendEmail('contato@marcelomichels.com', 'contato@marcelomichels.com', `Brazil deads count ${deads}`, msgEmail, msgEmail);
+    await sendEmail('contato@marcelomichels.com', 'contato@marcelomichels.com', msgEmail, msgEmail);
   } catch (error) {
     console.error(error)
   }
