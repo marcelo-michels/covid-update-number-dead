@@ -15,4 +15,5 @@
 
 
 ## Configurar um dominio para o e-mail utilizado no AWS SES
+- Para enviar e-mail com AWS SES é necessario realizar a autorização de seu dominio para isso.
 ![](assets/aws-ses.png)
