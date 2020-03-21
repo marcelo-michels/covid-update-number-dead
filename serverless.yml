@@ -1,0 +1,26 @@
+
+service: covid-update-number-dead
+
+app: covid-update-number-dead
+
+provider:
+  name: aws
+  profile: awsmmcom
+  runtime: nodejs12.x
+
+  stage: dev
+  region: us-east-1
+
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - ses:SendEmail
+      Resource: "*"
+
+functions:
+  main:
+    handler: handler.main
+    events:
+      - schedule:
+          name: cada-30-minutos
+          rate: rate(30 minutes) 
