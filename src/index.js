@@ -16,6 +16,3 @@ module.exports.index = async () => {
     return false;
   }
 };
-
-
-this.index();
