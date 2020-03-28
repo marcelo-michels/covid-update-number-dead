@@ -2,14 +2,13 @@
   "name": "covid-update-number-dead",
   "version": "1.0.0",
   "description": "",
-  "main": "handler.js",
+  "main": "src/index.js",
   "dependencies": {
     "aws-sdk": "^2.643.0",
     "node-fetch": "^2.6.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "serverless deploy"
   },
   "author": "",
   "license": "ISC"

@@ -5,22 +5,26 @@ app: covid-update-number-dead
 
 provider:
   name: aws
-  profile: awsmmcom
+  profile: awsmmcom   # Profile in local machine
   runtime: nodejs12.x
+  memorySize: 256 # MB
+  timeout: 2 # seconds
 
   stage: dev
   region: us-east-1
 
   iamRoleStatements:
+    # Permission to send e-mail w/ SES
     - Effect: Allow
       Action:
         - ses:SendEmail
       Resource: "*"
 
 functions:
-  main:
-    handler: handler.main
+  index:
+    handler: src/index.index
     events:
       - schedule:
-          name: cada-30-minutos
-          rate: rate(30 minutes) 
+          name: covid-schedule
+          rate: cron(0 0,1,10-23 * * ? *) 
+          timezone: America/Sao_paulo
