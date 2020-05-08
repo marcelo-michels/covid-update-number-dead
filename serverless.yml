@@ -25,6 +25,6 @@ functions:
     handler: src/index.index
     events:
       - schedule:
-          name: covid-schedule
-          rate: cron(0 0,1,10-23 * * ? *) 
+          name: covid-schedule-0
+          rate: cron(0 0 * * ? *) # 21:00:00 todos os dias
           timezone: America/Sao_paulo
