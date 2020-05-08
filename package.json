@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
-  "dependencies": {
-    "aws-sdk": "^2.643.0",
-    "node-fetch": "^2.6.0"
-  },
+  "author": "Marcelo Michels",
+  "license": "ISC",
   "scripts": {
     "deploy": "serverless deploy"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.672.0"
+  }
 }
