@@ -9,7 +9,7 @@
     "deploy": "serverless deploy"
   },
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "aws-sdk": "^2.672.0"
