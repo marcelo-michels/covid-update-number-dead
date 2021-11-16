@@ -12,6 +12,6 @@
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {
-    "aws-sdk": "^2.672.0"
+    "aws-sdk": "^2.814.0"
   }
 }
